@@ -6,9 +6,9 @@ UnConfernece Lighting Talk - Ionic Example
 Steps for creating the example mobile app
 
 0. Install Node.js
-  <code>
+  <pre>
   http://nodejs.org/
-  </code>
+  </pre>
 
 1. Ionic and Cordova
   sudo npm install -g cordova
