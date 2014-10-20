@@ -27,8 +27,8 @@ Steps for creating the example mobile app
   ionic serve
   </pre>
 
-4. Add a new route to the app:
-    Edit app.js
+4. Add a new route to the app:<br/>
+    - Edit app.js
 
     <pre>
     .state('tab.books', {
@@ -41,4 +41,47 @@ Steps for creating the example mobile app
       }
     });  
     </pre>
+
+5. Add a new tab to the app:<br/>
+    - Edit tabs.html
+
+    <pre>
+    <!-- Books Tab -->
+    <ion-tab title="Books" icon="icon ion-gear-b" href="#/tab/books">
+      <ion-nav-view name="tab-books"></ion-nav-view>
+    </ion-tab> 
+    </pre>
+
+6. Add a new Controler, BooksCtrl:<br/>
+    - Edit controllers.js
+
+    <pre>
+    .controller('BooksCtrl', function($scope, $http) {
+
+      var url = "http://gsbpublic0.localhost:8082/vep/view/books.jsonp?callback=JSON_CALLBACK";
+
+      $http.jsonp(url).success(function(data) {
+        $scope.books = data;
+        console.log(data);
+      });
+
+    });
+    </pre>
+
+Add the new tab page to the app:<br/>
+    - Edit tab-books.html
+
+    <pre>
+    <ion-view title="Books">
+      <ion-content>
+        <ion-list>
+          <ion-item ng-repeat="book in books" type="item-text-wrap">
+            <a href="{{book.field_link_unlimited.und[0].url}}" target="_blank">{{book.title}}</a> 
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-view>
+    </pre>
+
+
 
