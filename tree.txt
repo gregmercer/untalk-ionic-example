@@ -1,0 +1,210 @@
+gregs-mac:newApp$ tree
+.
+├── bower.json
+├── config.xml
+├── gulpfile.js
+├── hooks
+│   ├── README.md
+│   └── after_prepare
+│       └── 010_add_platform_class.js
+├── ionic.project
+├── package.json
+├── plugins
+│   ├── com.ionic.keyboard
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── package.json
+│   │   ├── plugin.xml
+│   │   ├── src
+│   │   │   ├── android
+│   │   │   │   └── IonicKeyboard.java
+│   │   │   └── ios
+│   │   │       ├── IonicKeyboard.h
+│   │   │       ├── IonicKeyboard.m
+│   │   │       ├── UIWebViewExtension.h
+│   │   │       └── UIWebViewExtension.m
+│   │   └── www
+│   │       └── keyboard.js
+│   ├── org.apache.cordova.console
+│   │   ├── CONTRIBUTING.md
+│   │   ├── LICENSE
+│   │   ├── NOTICE
+│   │   ├── README.md
+│   │   ├── RELEASENOTES.md
+│   │   ├── doc
+│   │   │   ├── de
+│   │   │   │   └── index.md
+│   │   │   ├── es
+│   │   │   │   └── index.md
+│   │   │   ├── fr
+│   │   │   │   └── index.md
+│   │   │   ├── index.md
+│   │   │   ├── it
+│   │   │   │   └── index.md
+│   │   │   ├── ja
+│   │   │   │   └── index.md
+│   │   │   ├── ko
+│   │   │   │   └── index.md
+│   │   │   ├── pl
+│   │   │   │   └── index.md
+│   │   │   ├── ru
+│   │   │   │   └── index.md
+│   │   │   └── zh
+│   │   │       └── index.md
+│   │   ├── package.json
+│   │   ├── plugin.xml
+│   │   ├── src
+│   │   │   ├── ios
+│   │   │   │   ├── CDVLogger.h
+│   │   │   │   └── CDVLogger.m
+│   │   │   ├── ubuntu
+│   │   │   │   ├── console.cpp
+│   │   │   │   └── console.h
+│   │   │   └── wp
+│   │   │       └── DebugConsole.cs
+│   │   └── www
+│   │       ├── console-via-logger.js
+│   │       └── logger.js
+│   └── org.apache.cordova.device
+│       ├── CONTRIBUTING.md
+│       ├── LICENSE
+│       ├── NOTICE
+│       ├── README.md
+│       ├── RELEASENOTES.md
+│       ├── doc
+│       │   ├── de
+│       │   │   └── index.md
+│       │   ├── es
+│       │   │   └── index.md
+│       │   ├── fr
+│       │   │   └── index.md
+│       │   ├── index.md
+│       │   ├── it
+│       │   │   └── index.md
+│       │   ├── ja
+│       │   │   └── index.md
+│       │   ├── ko
+│       │   │   └── index.md
+│       │   ├── pl
+│       │   │   └── index.md
+│       │   ├── ru
+│       │   │   └── index.md
+│       │   └── zh
+│       │       └── index.md
+│       ├── package.json
+│       ├── plugin.xml
+│       ├── src
+│       │   ├── android
+│       │   │   └── Device.java
+│       │   ├── blackberry10
+│       │   │   └── index.js
+│       │   ├── firefoxos
+│       │   │   └── DeviceProxy.js
+│       │   ├── ios
+│       │   │   ├── CDVDevice.h
+│       │   │   └── CDVDevice.m
+│       │   ├── tizen
+│       │   │   └── DeviceProxy.js
+│       │   ├── ubuntu
+│       │   │   ├── device.cpp
+│       │   │   ├── device.h
+│       │   │   └── device.js
+│       │   ├── windows8
+│       │   │   └── DeviceProxy.js
+│       │   └── wp
+│       │       └── Device.cs
+│       ├── tests
+│       │   ├── plugin.xml
+│       │   └── tests.js
+│       └── www
+│           └── device.js
+├── scss
+│   └── ionic.app.scss
+└── www
+    ├── css
+    │   └── style.css
+    ├── img
+    │   └── ionic.png
+    ├── index.html
+    ├── js
+    │   ├── app.js
+    │   ├── controllers.js
+    │   └── services.js
+    ├── lib
+    │   └── ionic
+    │       ├── css
+    │       │   ├── ionic.css
+    │       │   └── ionic.min.css
+    │       ├── fonts
+    │       │   ├── ionicons.eot
+    │       │   ├── ionicons.svg
+    │       │   ├── ionicons.ttf
+    │       │   └── ionicons.woff
+    │       ├── js
+    │       │   ├── angular
+    │       │   │   ├── angular-animate.js
+    │       │   │   ├── angular-animate.min.js
+    │       │   │   ├── angular-resource.js
+    │       │   │   ├── angular-resource.min.js
+    │       │   │   ├── angular-sanitize.js
+    │       │   │   ├── angular-sanitize.min.js
+    │       │   │   ├── angular.js
+    │       │   │   └── angular.min.js
+    │       │   ├── angular-ui
+    │       │   │   ├── angular-ui-router.js
+    │       │   │   └── angular-ui-router.min.js
+    │       │   ├── ionic-angular.js
+    │       │   ├── ionic-angular.min.js
+    │       │   ├── ionic.bundle.js
+    │       │   ├── ionic.bundle.min.js
+    │       │   ├── ionic.js
+    │       │   └── ionic.min.js
+    │       ├── scss
+    │       │   ├── _action-sheet.scss
+    │       │   ├── _animations.scss
+    │       │   ├── _backdrop.scss
+    │       │   ├── _badge.scss
+    │       │   ├── _bar.scss
+    │       │   ├── _button-bar.scss
+    │       │   ├── _button.scss
+    │       │   ├── _checkbox.scss
+    │       │   ├── _form.scss
+    │       │   ├── _grid.scss
+    │       │   ├── _items.scss
+    │       │   ├── _list.scss
+    │       │   ├── _loading.scss
+    │       │   ├── _menu.scss
+    │       │   ├── _mixins.scss
+    │       │   ├── _modal.scss
+    │       │   ├── _platform.scss
+    │       │   ├── _popover.scss
+    │       │   ├── _popup.scss
+    │       │   ├── _progress.scss
+    │       │   ├── _radio.scss
+    │       │   ├── _range.scss
+    │       │   ├── _reset.scss
+    │       │   ├── _scaffolding.scss
+    │       │   ├── _select.scss
+    │       │   ├── _slide-box.scss
+    │       │   ├── _tabs.scss
+    │       │   ├── _toggle.scss
+    │       │   ├── _type.scss
+    │       │   ├── _util.scss
+    │       │   ├── _variables.scss
+    │       │   ├── ionic.scss
+    │       │   └── ionicons
+    │       │       ├── _ionicons-animation.scss
+    │       │       ├── _ionicons-font.scss
+    │       │       ├── _ionicons-icons.scss
+    │       │       ├── _ionicons-variables.scss
+    │       │       └── ionicons.scss
+    │       └── version.json
+    └── templates
+        ├── friend-detail.html
+        ├── tab-account.html
+        ├── tab-books.html
+        ├── tab-dash.html
+        ├── tab-friends.html
+        └── tabs.html
+
+61 directories, 145 files
