@@ -29,7 +29,6 @@ Steps for creating the example mobile app
 
 4. Add a new route to the app:
     <pre>
-
     Edit app.js
 
     .state('tab.books', {
@@ -42,7 +41,5 @@ Steps for creating the example mobile app
       }
 
     });  
-
-
     </pre>
 
