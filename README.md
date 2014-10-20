@@ -65,7 +65,7 @@ Steps for creating the example mobile app
     });
     </pre>
 
-Add the new tab page to the app:<br/>
+7. Add the new tab page to the app:<br/>
     -- Edit tab-books.html
 
     <pre>
