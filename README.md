@@ -28,7 +28,7 @@ Steps for creating the example mobile app
   </pre>
 
 4. Add a new route to the app:<br/>
-    - Edit app.js
+    -- Edit app.js
 
     <pre>
     .state('tab.books', {
@@ -43,7 +43,7 @@ Steps for creating the example mobile app
     </pre>
 
 5. Add a new tab to the app:<br/>
-    - Edit tabs.html
+    -- Edit tabs.html
 
     <pre>
     <!-- Books Tab -->
@@ -53,23 +53,20 @@ Steps for creating the example mobile app
     </pre>
 
 6. Add a new Controler, BooksCtrl:<br/>
-    - Edit controllers.js
+    -- Edit controllers.js
 
     <pre>
     .controller('BooksCtrl', function($scope, $http) {
-
       var url = "http://gsbpublic0.localhost:8082/vep/view/books.jsonp?callback=JSON_CALLBACK";
-
       $http.jsonp(url).success(function(data) {
         $scope.books = data;
         console.log(data);
       });
-
     });
     </pre>
 
 Add the new tab page to the app:<br/>
-    - Edit tab-books.html
+    -- Edit tab-books.html
 
     <pre>
     <ion-view title="Books">
