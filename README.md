@@ -11,17 +11,24 @@ Steps for creating the example mobile app
   </pre>
 
 1. Ionic and Cordova
+  <pre>
   sudo npm install -g cordova
   sudo npm install -g ionic
+  </pre>
 
 2. Create a tabbed Ionic-based App
+  <pre>
   ionic start myApp tabs
+  </pre>
 
 3. Test the app in your browser
+  <pre>
   cd myApp
   ionic serve
+  </pre>
 
 4. Add a new route to the app:
+    <pre>
 
     Edit app.js
 
@@ -33,5 +40,9 @@ Steps for creating the example mobile app
           controller: 'BooksCtrl'
         }
       }
+
     });  
+
+
+    </pre>
 
