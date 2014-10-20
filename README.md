@@ -28,9 +28,9 @@ Steps for creating the example mobile app
   </pre>
 
 4. Add a new route to the app:
-    <pre>
     Edit app.js
 
+    <pre>
     .state('tab.books', {
       url: '/books',
       views: {
@@ -39,7 +39,6 @@ Steps for creating the example mobile app
           controller: 'BooksCtrl'
         }
       }
-
     });  
     </pre>
 
