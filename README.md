@@ -45,13 +45,17 @@ Steps for creating the example mobile app
 5. Add a new tab to the app:<br/>
     -- Edit tabs.html
 
-    <pre>
-    </pre>
+    ```
+    <!-- Books Tab -->
+    <ion-tab title="Books" icon="icon ion-gear-b" href="#/tab/books">
+      <ion-nav-view name="tab-books"></ion-nav-view>
+    </ion-tab> 
+    ```
 
 6. Add a new Controler - BooksCtrl:<br/>
     -- Edit controllers.js
 
-    <pre>
+    ```
     .controller('BooksCtrl', function($scope, $http) {
       var url = "http://gsbpublic0.localhost:8082/vep/view/books.jsonp?callback=JSON_CALLBACK";
       $http.jsonp(url).success(function(data) {
@@ -59,13 +63,22 @@ Steps for creating the example mobile app
         console.log(data);
       });
     });
-    </pre>
+    ```
 
 7. Add the new tab page to the app:<br/>
     -- Edit tab-books.html
 
-    <pre>
-    </pre>
+    ```
+    <ion-view title="Books">
+      <ion-content>
+        <ion-list>
+          <ion-item ng-repeat="book in books" type="item-text-wrap">
+            <a href="{{book.field_link_unlimited.und[0].url}}" target="_blank">{{book.title}}</a> 
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-view>
+    ```
 
 
 
