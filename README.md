@@ -3,7 +3,10 @@ untalk-ionic-example
 
 UnConfernece Lighting Talk - Ionic Example
 
-Steps for creating the example mobile app
+Note: I've provide a view of the tree structure of the files for this app here:
+
+
+Steps for creating the example mobile app:
 
 0. Install Node.js
   <pre>
