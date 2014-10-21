@@ -83,5 +83,6 @@ Steps for creating the example mobile app:
     </ion-view>
     ```
 
-
+Here's a screenshot of the mobile app we have just created:<br/>
+![alt text](https://raw.githubusercontent.com/gregmercer/untalk-ionic-example/master/books_tab.png "Screenshot of newApp")
 
