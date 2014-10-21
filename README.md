@@ -10,7 +10,7 @@ Steps for creating the example mobile app
   http://nodejs.org/
   </pre>
 
-1. Ionic and Cordova
+1. Install Ionic and Cordova
   <pre>
   sudo npm install -g cordova
   sudo npm install -g ionic
@@ -46,13 +46,9 @@ Steps for creating the example mobile app
     -- Edit tabs.html
 
     <pre>
-    <!-- Books Tab -->
-    <ion-tab title="Books" icon="icon ion-gear-b" href="#/tab/books">
-      <ion-nav-view name="tab-books"></ion-nav-view>
-    </ion-tab> 
     </pre>
 
-6. Add a new Controler, BooksCtrl:<br/>
+6. Add a new Controler - BooksCtrl:<br/>
     -- Edit controllers.js
 
     <pre>
@@ -69,15 +65,6 @@ Steps for creating the example mobile app
     -- Edit tab-books.html
 
     <pre>
-    <ion-view title="Books">
-      <ion-content>
-        <ion-list>
-          <ion-item ng-repeat="book in books" type="item-text-wrap">
-            <a href="{{book.field_link_unlimited.und[0].url}}" target="_blank">{{book.title}}</a> 
-          </ion-item>
-        </ion-list>
-      </ion-content>
-    </ion-view>
     </pre>
 
 
