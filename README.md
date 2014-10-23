@@ -6,6 +6,9 @@ UnConfernece Lighting Talk - Ionic Example
 Note: I've provide a view of the tree structure of the files for this app here:
 https://raw.githubusercontent.com/gregmercer/untalk-ionic-example/master/tree.txt
 
+Here's a screenshot of the mobile app we are going to create:<br/>
+![alt text](https://raw.githubusercontent.com/gregmercer/untalk-ionic-example/master/books_tab.png "Screenshot of newApp")
+
 Steps for creating the example mobile app:
 
 0. Install Node.js
@@ -30,7 +33,17 @@ Steps for creating the example mobile app:
   ionic serve
   </pre>
 
-4. Add a new route to the app:<br/>
+4. Add a new tab to the app:<br/>
+    -- Edit tabs.html
+
+    ```
+    <!-- Books Tab -->
+    <ion-tab title="Books" icon="icon ion-gear-b" href="#/tab/books">
+      <ion-nav-view name="tab-books"></ion-nav-view>
+    </ion-tab> 
+    ```
+
+5. Add a new route to the app:<br/>
     -- Edit app.js
 
     <pre>
@@ -44,16 +57,6 @@ Steps for creating the example mobile app:
       }
     });  
     </pre>
-
-5. Add a new tab to the app:<br/>
-    -- Edit tabs.html
-
-    ```
-    <!-- Books Tab -->
-    <ion-tab title="Books" icon="icon ion-gear-b" href="#/tab/books">
-      <ion-nav-view name="tab-books"></ion-nav-view>
-    </ion-tab> 
-    ```
 
 6. Add a new Controler - BooksCtrl:<br/>
     -- Edit controllers.js
@@ -82,7 +85,4 @@ Steps for creating the example mobile app:
       </ion-content>
     </ion-view>
     ```
-
-Here's a screenshot of the mobile app we have just created:<br/>
-![alt text](https://raw.githubusercontent.com/gregmercer/untalk-ionic-example/master/books_tab.png "Screenshot of newApp")
 
