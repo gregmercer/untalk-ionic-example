@@ -86,3 +86,28 @@ Steps for creating the example mobile app:
     </ion-view>
     ```
 
+Drupal Changes
+
+1. Download these modules:
+
+  <pre>
+    services
+    services_views
+
+    Modules for Services
+    https://www.drupal.org/project/services (includes REST server)
+    https://www.drupal.org/project/services_views
+  </pre>
+  
+2. Enable these modules:
+
+    <pre>
+    In Drupal goto this page:
+    admin/modules
+
+    services (rest_server)
+    services_views
+    </pre>
+    
+    ![alt text](https://raw.githubusercontent.com/gregmercer/untalk-ionic-example/master/enable_modules.png "Screenshot of Drupal Modules Page")
+    
