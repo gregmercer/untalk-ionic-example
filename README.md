@@ -1,7 +1,7 @@
 untalk-ionic-example
 ====================
 
-UnConfernece Lighting Talk - Ionic Example
+UnConfernece Lighting Talk 2014 - Ionic Example
 
 Note: I've provide a view of the tree structure of the files for this app here:
 https://raw.githubusercontent.com/gregmercer/untalk-ionic-example/master/tree.txt
