@@ -127,3 +127,16 @@ Drupal Changes
     ![alt text](https://raw.githubusercontent.com/gregmercer/untalk-ionic-example/master/end_point_ep.png "Screenshot of Services EP End Point Page")
     
     ![alt text](https://raw.githubusercontent.com/gregmercer/untalk-ionic-example/master/end_point_vep.png "Screenshot of Services VEP End Point Page")    
+
+4. Test our new Services in Drupal:
+
+    <pre>
+    Go to these endpoints:
+
+    ep as an endpoint, and node as a resource
+    http://gsbpublic0.localhost:8082/ep/node/302036.json
+
+    vep as an endpoint, and view as a resource
+    also we've created a very simple view called: books
+    http://gsbpublic0.localhost:8082/vep/view/books.json
+    </pre>
