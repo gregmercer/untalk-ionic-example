@@ -111,3 +111,19 @@ Drupal Changes
     
     ![alt text](https://raw.githubusercontent.com/gregmercer/untalk-ionic-example/master/enable_modules.png "Screenshot of Drupal Modules Page")
     
+3. Configure Services:
+
+    <pre>
+    In Drupal goto this page:
+    admin/structure/services
+    
+    Add two endpoints:
+    admin/structure/services/list/ep/resources
+    admin/structure/services/list/vep/resources
+    </pre>
+
+    ![alt text](https://raw.githubusercontent.com/gregmercer/untalk-ionic-example/master/end_points.png "Screenshot of Drupal Services End Point Page")
+
+    ![alt text](https://raw.githubusercontent.com/gregmercer/untalk-ionic-example/master/end_point_ep.png "Screenshot of Services EP End Point Page")
+    
+    ![alt text](https://raw.githubusercontent.com/gregmercer/untalk-ionic-example/master/end_point_vep.png "Screenshot of Services VEP End Point Page")    
